@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { model, Schema } = mongoose;
 
-const cartItemSchema = schema({
+const cartItemSchema = Schema({
   name: {
     type: String,
     minLength: [5, "Panjang nama makanan minimal 50 karakter"],
